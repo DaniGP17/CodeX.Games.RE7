@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net10.0-windows7.0</TargetFramework>
+		<Nullable>disable</Nullable>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Platforms>AnyCPU;x64</Platforms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\CodeX.Core\CodeX.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="CodeX.Games.RE7.filelist.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Include="Resources\rszre7.json" />
+	</ItemGroup>
+
+</Project>
